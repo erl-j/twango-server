@@ -14,3 +14,4 @@ export class CreateAdminUser1547919837483 implements MigrationInterface {
 
   public async down(queryRunner: QueryRunner): Promise<any> {}
 }
+ 

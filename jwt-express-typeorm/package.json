@@ -1,5 +1,5 @@
 {
-   "name": "TwangoServer",
+   "name": "jwt-express-typeorm",
    "version": "0.0.1",
    "description": "Awesome project developed with TypeORM.",
    "devDependencies": {
@@ -20,15 +20,15 @@
       "express": "^4.15.4",
       "helmet": "^3.15.1",
       "jsonwebtoken": "^8.5.0",
-      "mysql": "^2.14.1",
       "reflect-metadata": "^0.1.10",
+      "sqlite3": "^4.0.3",
       "ts-node-dev": "^1.0.0-pre.32",
       "typeorm": "0.2.14"
    },
    "scripts": {
-	   "tsc": "tsc",
-	   "start": "set debug=* && ts-node-dev --respawn --transpileOnly ./src/index.ts",
-	   "prod": "tsc && node ./build/app.js",
-	   "migration:run": "ts-node ./node_modules/typeorm/cli.js migration:run"
-	}
+      "tsc": "tsc",
+      "start": "set debug=* && ts-node-dev --respawn --transpileOnly ./src/index.ts",
+      "prod": "tsc && node ./build/app.js",
+      "migration:run": "ts-node ./node_modules/typeorm/cli.js migration:run"
+   }
 }
